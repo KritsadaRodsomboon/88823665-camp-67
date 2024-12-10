@@ -1,0 +1,67 @@
+/* พื้นฐานของหน้าฟอร์ม */
+body {
+    font-family: 'Kanit', sans-serif; /* ใช้ฟอนต์ Kanit */
+    background-color: #d9a9d9; /* สีพื้นหลังม่วง */
+    color: #000; /* สีตัวอักษร */
+    margin: 0;
+    padding: 0;
+}
+
+/* สไตล์สำหรับหัวข้อ */
+h1 {
+    text-align: center;
+    color: #3500d3; /* สีฟ้าเข้ม */
+    margin-bottom: 20px;
+}
+
+/* การจัดการตาราง */
+table {
+    margin: auto; /* ทำให้ตารางอยู่ตรงกลาง */
+    border-spacing: 10px; /* ระยะห่างระหว่างเซลล์ */
+    width: 50%; /* ความกว้างของตาราง */
+}
+
+td {
+    text-align: left; /* ข้อความชิดซ้าย */
+    vertical-align: middle; /* ทำให้ข้อความอยู่ตรงกลางในแนวตั้ง */
+}
+
+/* สไตล์ช่องกรอกข้อมูล */
+input[type="text"], input[type="date"], select, textarea {
+    width: 100%; /* ช่องกรอกข้อมูลเต็มความกว้าง */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* มุมมน */
+    box-sizing: border-box; /* แก้ปัญหา padding เกินกรอบ */
+}
+
+textarea {
+    resize: none; /* ไม่ให้เปลี่ยนขนาด */
+}
+
+/* ปุ่ม */
+button, input[type="button"], input[type="submit"] {
+    background-color: #6200ea; /* สีปุ่ม */
+    color: #fff; /* สีตัวอักษรในปุ่ม */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48%; /* ความกว้าง 48% */
+    margin-right: 2%; /* ระยะห่างระหว่างปุ่ม */
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover {
+    background-color: #4500b6; /* เปลี่ยนสีปุ่มเมื่อ Hover */
+}
+
+/* กล่องไฟล์ */
+input[type="file"] {
+    padding: 5px;
+}
+
+/* ช่องวิทยุและช่องเช็คบ็อกซ์ */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px; /* ระยะห่างด้านขวา */
+}
